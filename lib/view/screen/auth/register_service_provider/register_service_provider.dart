@@ -38,7 +38,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 },
                 controller: registerServiceProviderController.email,
                 hintText: 'yourname @mail.com',
-                labelText: 'Email',
+                labelText: '   Email   ',
                 suffixIcon: const Icon(Icons.mail_outline),
               ),
               //********************  Password TextField  ******************* */
@@ -50,7 +50,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 },
                 controller: registerServiceProviderController.password,
                 hintText: 'At least 8 characters',
-                labelText: 'Password',
+                labelText: '   Password   ',
                 suffixIcon: SvgPicture.asset(
                   AppIcons.visibilityLock,
                 ),
@@ -71,7 +71,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 },
                 controller: registerServiceProviderController.confirmPassword,
                 hintText: 'Confirm Password',
-                labelText: 'Confirm Password',
+                labelText: '   Confirm Password   ',
                 suffixIcon: const Icon(Icons.visibility_off_outlined),
               ),
               //********************  Contact number TextField  ******************* */
@@ -82,7 +82,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 },
                 controller: registerServiceProviderController.contactNumber,
                 hintText: '+963   123456789',
-                labelText: 'Contact number',
+                labelText: '   Contact number   ',
                 suffixIcon: const Icon(Icons.phone_outlined),
               ),
               //********************  Busines name TextField  ******************* */
@@ -93,7 +93,7 @@ class RegisterServiceProvider extends StatelessWidget {
                   },
                   controller: registerServiceProviderController.businesName,
                   hintText: 'yourname @mail.com',
-                  labelText: 'Busines name',
+                  labelText: '   Busines name   ',
                   suffixIcon: const Icon(Icons.card_membership)),
               //********************  Service Type TextField  ******************* */
               const SizedBox(height: 50),
@@ -103,7 +103,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 },
                 controller: registerServiceProviderController.serviceType,
                 hintText: 'Enter service ',
-                labelText: 'Service Type',
+                labelText: '   Service Type   ',
                 suffixIcon: const Icon(Icons.edit_outlined),
               ),
               //********************  Bank data TextField  ******************* */
@@ -122,6 +122,7 @@ class RegisterServiceProvider extends StatelessWidget {
                 controller: registerServiceProviderController.uploadFile,
                 hintText: 'Upload file ',
                 labelText: '',
+                readOnly: true,
                 suffixIcon: const Icon(Icons.file_upload_outlined),
               ),
               //********************  Sign up Button  ******************* */

@@ -17,7 +17,7 @@ class AddServiceDownTextField extends StatelessWidget {
         TextFormFieldRegister(
           controller: addServiceController.discount,
           hintText: 'Pleas Enter Discount %',
-          labelText: 'Enter Discount',
+          labelText: '   Enter Discount   ',
           suffixIcon: const Icon(Icons.edit_outlined),
         ),
         SizedBox(height: height * 0.05),
@@ -25,7 +25,7 @@ class AddServiceDownTextField extends StatelessWidget {
         TextFormFieldRegister(
           controller: addServiceController.totalCost,
           hintText: 'Total Cost',
-          labelText: 'Total Cost',
+          labelText: '   Total Cost   ',
           suffixIcon: const Icon(Icons.edit_outlined),
         ),
       ],

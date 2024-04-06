@@ -8,6 +8,8 @@ class ClientSay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
+    double height = MediaQuery.sizeOf(context).height;
     return Column(
       children: [
         //******************* Container and Text *******************//
@@ -52,7 +54,7 @@ class ClientSay extends StatelessWidget {
         Stack(
           children: [
             Container(
-              width: 350,
+              width: width,
               height: 191,
               decoration: const BoxDecoration(
                 image: DecorationImage(image: AssetImage(AppImages.background)),
@@ -64,7 +66,10 @@ class ClientSay extends StatelessWidget {
               ),
               //******************* Text *******************//
               child: Padding(
-                padding: const EdgeInsets.only(left: 30, right: 20, top: 10),
+                padding: EdgeInsets.only(
+                    left: width * 0.07,
+                    right: width * 0.05,
+                    top: height * 0.02),
                 child: Text(
                   'Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.',
                   style: Theme.of(context)
@@ -75,10 +80,10 @@ class ClientSay extends StatelessWidget {
               ),
             ),
             //******************* Person Image *******************//
-            const Positioned(
-              top: 60,
-              left: 271,
-              child: SizedBox(
+            Positioned(
+              top: height * 0.08,
+              left: width * 0.68,
+              child: const SizedBox(
                   width: 74,
                   height: 87,
                   child: CircleAvatar(
@@ -86,10 +91,10 @@ class ClientSay extends StatelessWidget {
                   )),
             ),
             //******************* Person name *******************//
-            const Positioned(
-              top: 140,
-              left: 150,
-              child: Text(
+            Positioned(
+              top: height * 0.18,
+              left: width * 0.4,
+              child: const Text(
                 'Lara Khalili',
               ),
             )

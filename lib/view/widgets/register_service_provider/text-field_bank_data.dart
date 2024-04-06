@@ -25,7 +25,7 @@ class BankDataTextField extends StatelessWidget {
             controller: controller,
             readOnly: true,
             hintText: 'Pleas enter data in fields ',
-            labelText: 'Bank data',
+            labelText: '   Bank data   ',
             suffixIcon: IconButton(
                 onPressed: () {
                   if (isExpanded.value) {
@@ -37,9 +37,18 @@ class BankDataTextField extends StatelessWidget {
                 icon: const Icon(Icons.arrow_drop_down)),
           ),
           children: const <Widget>[
-            DoctorSearch(hintText: 'Bank name'),
-            DoctorSearch(hintText: 'Swift code'),
-            DoctorSearch(hintText: 'Ilban'),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: DoctorSearch(hintText: 'Bank name'),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: DoctorSearch(hintText: 'Swift code'),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: DoctorSearch(hintText: 'Ilban'),
+            ),
           ],
         );
       },

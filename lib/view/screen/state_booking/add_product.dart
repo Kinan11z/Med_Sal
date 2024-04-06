@@ -40,7 +40,7 @@ class AddProductPage extends StatelessWidget {
                       type: 'Name of Service', min: 10, max: 40, val: val!);
                 },
                 hintText: 'Pleas Enter Name of Service',
-                labelText: 'Enter Name of Service',
+                labelText: '   Enter Name of Service   ',
                 suffixIcon: const Icon(Icons.edit_outlined),
               ),
               SizedBox(height: height * 0.05),
@@ -52,7 +52,7 @@ class AddProductPage extends StatelessWidget {
                       type: 'Cost Service', min: 10, max: 40, val: val!);
                 },
                 hintText: 'Pleas Enter Cost',
-                labelText: 'Enter Cost',
+                labelText: '   Enter Cost   ',
                 suffixIcon: const Icon(Icons.edit_outlined),
               ),
               //************* Yes Or No Button  ************** */
@@ -63,7 +63,7 @@ class AddProductPage extends StatelessWidget {
               TextFormFieldRegister(
                 controller: addProductController.discount,
                 hintText: 'Pleas Enter Discount %',
-                labelText: 'Enter Discount',
+                labelText: '   Enter Discount   ',
                 suffixIcon: const Icon(Icons.edit_outlined),
               ),
               //***************   Confirm Button   ************** */

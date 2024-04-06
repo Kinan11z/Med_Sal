@@ -21,7 +21,7 @@ class AddServiceTopTextField extends StatelessWidget {
             return validate(type: 'name', min: 10, max: 40, val: val!);
           },
           hintText: 'Pleas Enter Name of Service',
-          labelText: 'Enter Name of Service',
+          labelText: '   Enter Name of Service   ',
           suffixIcon: const Icon(Icons.edit_outlined),
         ),
         SizedBox(height: height * 0.05),
@@ -32,7 +32,7 @@ class AddServiceTopTextField extends StatelessWidget {
             return validate(type: 'name', min: 10, max: 40, val: val!);
           },
           hintText: 'Pleas Enter Name of Category',
-          labelText: 'Enter Name of Category',
+          labelText: '   Enter Name of Category   ',
           suffixIcon: const Icon(Icons.edit_outlined),
         ),
         SizedBox(height: height * 0.05),
@@ -43,7 +43,7 @@ class AddServiceTopTextField extends StatelessWidget {
             return validate(type: 'name', min: 10, max: 40, val: val!);
           },
           hintText: 'Pleas Enter Cost',
-          labelText: 'Enter Cost',
+          labelText: '   Enter Cost   ',
           suffixIcon: const Icon(Icons.edit_outlined),
         ),
       ],

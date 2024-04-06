@@ -26,10 +26,7 @@ class TextFormFieldRegister extends StatelessWidget {
       decoration: InputDecoration(
           hintText: hintText,
           hintStyle: const TextStyle(color: AppColors.greyColor),
-          label: Padding(
-            padding: const EdgeInsets.only(left: 30, right: 10),
-            child: Text(labelText),
-          ),
+          label: Text(labelText),
           suffixIconColor: AppColors.greyColor,
           floatingLabelBehavior: FloatingLabelBehavior.always,
           suffixIcon: Padding(

@@ -40,7 +40,7 @@ class ResetPassword extends StatelessWidget {
                   },
                   controller: resetPasswordController.password,
                   hintText: '**********',
-                  labelText: 'New Password',
+                  labelText: '   New Password   ',
                   suffixIcon: SvgPicture.asset(
                     AppIcons.visibilityLock,
                   ),
@@ -60,7 +60,7 @@ class ResetPassword extends StatelessWidget {
                   },
                   controller: resetPasswordController.confirmPassword,
                   hintText: '**********',
-                  labelText: 'Confirm Password',
+                  labelText: '   Confirm Password   ',
                   suffixIcon: const Icon(Icons.visibility_off_outlined),
                 ),
                 //********************  Change Password Button  ******************* */

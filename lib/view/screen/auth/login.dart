@@ -42,7 +42,7 @@ class Login extends StatelessWidget {
                     return validate(type: 'email', min: 10, max: 40, val: val!);
                   },
                   hintText: 'yourname @mail.com',
-                  labelText: 'Email',
+                  labelText: '   Email   ',
                   suffixIcon: const Icon(Icons.mail_outline),
                 ),
               ),
@@ -57,7 +57,7 @@ class Login extends StatelessWidget {
                         type: 'password', min: 10, max: 40, val: val!);
                   },
                   hintText: '********',
-                  labelText: 'Password',
+                  labelText: '   Password   ',
                   suffixIcon: SvgPicture.asset(
                     AppIcons.visibilityLock,
                   ),

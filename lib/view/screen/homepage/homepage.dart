@@ -20,7 +20,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     HomePageController homePageController = Get.put(HomePageController());
     double width = MediaQuery.sizeOf(context).width;
-    // double height = MediaQuery.sizeOf(context).height;
     return Scaffold(
       endDrawer: const Drawer(child: DrawerColumn()),
       appBar: AppBar(

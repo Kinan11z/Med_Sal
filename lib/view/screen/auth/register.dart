@@ -53,7 +53,7 @@ class RegisterPage extends StatelessWidget {
                                 type: 'email', min: 10, max: 40, val: val!);
                           },
                           hintText: 'yourname @mail.com',
-                          labelText: 'Email',
+                          labelText: '   Email   ',
                           suffixIcon: const Icon(Icons.mail_outline),
                         ),
                       ),
@@ -67,7 +67,7 @@ class RegisterPage extends StatelessWidget {
                                 type: 'password', min: 10, max: 40, val: val!);
                           },
                           hintText: 'At least 8 characters',
-                          labelText: 'Password',
+                          labelText: '   Password   ',
                           suffixIcon: SvgPicture.asset(
                             AppIcons.visibilityLock,
                           ),
@@ -83,7 +83,7 @@ class RegisterPage extends StatelessWidget {
                           },
                           controller: registerController.confirmPassword,
                           hintText: 'Confirm Password',
-                          labelText: 'Confirm Password',
+                          labelText: '   Confirm Password   ',
                           suffixIcon: const Icon(Icons.visibility_off_outlined),
                         ),
                       ),

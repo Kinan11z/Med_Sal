@@ -45,7 +45,7 @@ class ForgotPassword extends StatelessWidget {
                   },
                   controller: forgotPasswordController.email,
                   hintText: 'yourname @mail.com',
-                  labelText: 'Email',
+                  labelText: '   Email   ',
                   suffixIcon: const Icon(Icons.mail_outline),
                 ),
               ),
